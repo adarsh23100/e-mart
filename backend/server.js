@@ -12,10 +12,10 @@ process.on("uncaughtException",(err)=>{
     })
 })
 
-//Config
+// Config
 dotenv.config({path:"backend/config/config.env"});
 
-//Connecting to database
+// Connecting to database
 connectDatabase();
 
 const server = app.listen(process.env.port,() => {
