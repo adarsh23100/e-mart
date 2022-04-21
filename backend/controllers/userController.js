@@ -234,5 +234,3 @@ exports.deleteUser = catchAsyncErrors(async(req,res,next) => {
         message: "User deleted successfully"
     });
 });
-
-// Create new review or update the review
