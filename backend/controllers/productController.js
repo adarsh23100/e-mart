@@ -12,8 +12,8 @@ exports.createProduct = catchAsyncErrors(async (req,res,next)=>{
     res.status(201).json({
         success:true,
         product
-    })
-})
+    });
+});
 
 
 // Get All Products
@@ -27,8 +27,8 @@ exports.getAllProducts = catchAsyncErrors(async (req,res) => {
     res.status(200).json({
         success:true,
         products
-    })
-})
+    });
+});
 
 // Get Product Details
 exports.getProductDetails = catchAsyncErrors(async (req,res,next)=>{
@@ -63,7 +63,7 @@ exports.updateProduct = catchAsyncErrors(async(req,res,next)=>{
         success:true,
         product
     });
-})
+});
 
 // Delete Product
 
@@ -80,7 +80,7 @@ exports.deleteProduct = catchAsyncErrors(async(req,res,next)=>{
         success:true,
         message:"Product deleted successfully"
     });
-})
+});
 
 // Create new review or update the review
 
@@ -122,7 +122,7 @@ exports.createProductReview = catchAsyncErrors(async(req,res,next)=>{
 
     res.status(200).json({
         success: true,
-    })
+    });
 });
 
 // Get all reviews of a product
@@ -178,4 +178,4 @@ exports.deleteReview = catchAsyncErrors(async (req,res,next) => {
     res.status(200).json({
         success: true,
     });
-})
+});
