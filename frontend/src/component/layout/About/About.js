@@ -3,7 +3,7 @@ import "./aboutSection.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import logo from "../../../images/logo.png";
+import Adarsh from "../../../images/Adarsh.jpg";
 
 const About = () => {
   const visitInstagram = () => {
@@ -20,7 +20,7 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src={logo}
+              src={Adarsh}
               alt="Founder"
             />
             <Typography>Adarsh Rajesh</Typography>
@@ -28,7 +28,7 @@ const About = () => {
               Visit Instagram
             </Button>
             <span>
-              This is a sample wesbite made by Adarsh Rajesh.
+              This is a wesbite made by Adarsh Rajesh.
             </span>
           </div>
           <div className="aboutSectionContainer2">
